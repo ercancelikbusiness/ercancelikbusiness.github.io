@@ -38,8 +38,17 @@ h2::after{content:'';display:block;width:48px;height:3px;background:var(--gold);
 .feat div{background:rgba(255,255,255,.03);border:1px solid var(--border);border-radius:10px;padding:14px 16px;font-size:14px;color:#c9c9d2}
 .feat b{color:var(--gold);display:block;font-size:13px;letter-spacing:.5px;text-transform:uppercase;margin-bottom:4px}
 .shots{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:22px}
-.shots img{width:100%;border-radius:10px;border:1px solid var(--border);display:block}
-.shots img.tall{grid-column:span 1}
+.shots img{width:100%;border-radius:10px;border:1px solid var(--border);display:block;cursor:zoom-in;transition:border-color .2s}
+.shots img:hover{border-color:var(--gold)}
+.lb{position:fixed;inset:0;background:rgba(0,0,0,.92);z-index:100;display:none;align-items:center;justify-content:center;flex-direction:column;padding:30px}
+.lb.open{display:flex}
+.lb img{max-width:92vw;max-height:80vh;border-radius:10px;border:1px solid var(--border)}
+.lb-cap{color:var(--muted);margin-top:14px;font-size:14px;letter-spacing:.5px}
+.lb-btn{position:absolute;background:rgba(255,255,255,.07);border:1px solid var(--border);color:var(--text);width:46px;height:46px;border-radius:50%;font-size:24px;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:.15s}
+.lb-btn:hover{background:var(--gold);color:#0a0a0b;border-color:var(--gold)}
+.lb-x{top:20px;right:20px}
+.lb-p{left:16px;top:50%;transform:translateY(-50%)}
+.lb-n{right:16px;top:50%;transform:translateY(-50%)}
 .svc{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:18px}
 .svc .card h3{color:var(--gold);font-size:16px;margin-bottom:10px}
 .svc .card ul{list-style:none;font-size:14px;color:#c9c9d2}
@@ -65,7 +74,7 @@ footer{border-top:1px solid var(--border);padding:30px 0;text-align:center;color
 </div></nav>
 
 <header class="hero"><div class="wrap">
-  <div class="kicker">Sıfırdan ve kanıtlanmış mimariden</div>
+  <div class="kicker">Sıfırdan ve kanıtlanmış mimari ile</div>
   <h1>İşletmeniz için <em>uçtan uca</em><br>e-ticaret platformu hazırlayalım</h1>
   <p>Ödeme, kargo, fatura, üyelik ve admin paneli dahil — canlıda çalışan, satış alan, size özgü e-ticaret platformunuzu oluşturalım; bağımsız ticarete başlayın.</p>
   <a class="btn solid" href="#iletisim">Projenizi Konuşalım</a>
@@ -86,26 +95,26 @@ footer{border-top:1px solid var(--border);padding:30px 0;text-align:center;color
     <div class="feat">
       <div><b>Ödeme</b>İyzico CheckoutForm · 3D Secure · taksit · kart saklama</div>
       <div><b>Kargo</b>Tüm firmalar (Yurtiçi, MNG, Aras, Hepsijet…) · teklif→barkod→etiket→takip · iade kodu</div>
-      <div><b>Fatura</b>BirFatura e-Arşiv/e-Fatura otomatik kesim + PDF maili</div>
+      <div><b>Fatura</b>e-Arşiv/e-Fatura otomatik kesim + müşteriye PDF maili</div>
       <div><b>Üyelik</b>Telefon OTP + e-posta · adres · favoriler · iade · destek</div>
       <div><b>Admin</b>Sipariş/ürün/stok/üye yönetimi · Telegram bildirimleri</div>
       <div><b>Pazarlama</b>GA4 · Meta Pixel+CAPI · Clarity · Merchant feed · SEO</div>
     </div>
     <div class="shots">
-      <img src="screenshots/desktop-home.png" alt="VIXI ana sayfa">
-      <img src="screenshots/desktop-categories.png" alt="VIXI kategori vitrini">
-      <img src="screenshots/desktop-products.png" alt="VIXI ürün listesi">
-      <img src="screenshots/desktop-product.png" alt="VIXI ürün detayı">
-      <img src="screenshots/desktop-checkout.png" alt="VIXI güvenli ödeme">
-      <img src="screenshots/hesabim.png" alt="VIXI üye hesabı">
+      <img src="screenshots/desktop-home.png" alt="Vitrin — ana sayfa">
+      <img src="screenshots/desktop-categories.png" alt="Vitrin — koleksiyonlar">
+      <img src="screenshots/desktop-products.png" alt="Vitrin — ürün listesi">
+      <img src="screenshots/desktop-product.png" alt="Vitrin — ürün detayı">
+      <img src="screenshots/desktop-checkout.png" alt="Vitrin — güvenli ödeme">
+      <img src="screenshots/hesabim.png" alt="Vitrin — üye hesabı">
     </div>
     <h3 style="margin-top:26px;font-size:20px;color:var(--gold);text-align:center">Admin Paneli</h3>
     <p style="font-size:15px;color:var(--muted);margin-bottom:4px;text-align:center">Site sahibi her şeyi kendisi yönetir — sipariş, ürün, stok, müşteri, vitrin ayarları:</p>
     <div class="shots" style="margin-top:10px">
-      <img src="screenshots/admin-dashboard.png" alt="Admin dashboard">
-      <img src="screenshots/admin-orders.png" alt="Admin sipariş yönetimi">
-      <img src="screenshots/admin-products.png" alt="Admin ürün yönetimi">
-      <img src="screenshots/admin-ayarlar.png" alt="Admin site ayarları">
+      <img src="screenshots/admin-dashboard.png" alt="Admin — gösterge paneli">
+      <img src="screenshots/admin-orders.png" alt="Admin — sipariş yönetimi">
+      <img src="screenshots/admin-products.png" alt="Admin — ürün yönetimi">
+      <img src="screenshots/admin-ayarlar.png" alt="Admin — vitrin ayarları">
     </div>
     <p style="margin-top:18px;font-size:14px">
       Teknik detay: <a href="https://github.com/ercancelikbusiness/vixi-ecommerce-case-study">vixi-ecommerce-case-study</a> — mimari, kararlar, ekran görüntüleri
@@ -169,5 +178,23 @@ footer{border-top:1px solid var(--border);padding:30px 0;text-align:center;color
 <footer><div class="wrap">
   © 2026 Ercan Çelik
 </div></footer>
+
+<div class="lb" id="lb">
+  <button class="lb-btn lb-x" onclick="lbClose()" aria-label="Kapat">✕</button>
+  <button class="lb-btn lb-p" onclick="lbNav(-1)" aria-label="Önceki">‹</button>
+  <img id="lbImg" src="" alt="">
+  <div class="lb-cap" id="lbCap"></div>
+  <button class="lb-btn lb-n" onclick="lbNav(1)" aria-label="Sonraki">›</button>
+</div>
+<script>
+const lbImgs=[...document.querySelectorAll('.shots img')];let lbI=0;
+const lbEl=document.getElementById('lb'),lbImg=document.getElementById('lbImg'),lbCap=document.getElementById('lbCap');
+function lbOpen(i){lbI=i;lbImg.src=lbImgs[i].src;lbImg.alt=lbImgs[i].alt;lbCap.textContent=lbImgs[i].alt;lbEl.classList.add('open');document.body.style.overflow='hidden'}
+function lbNav(d){lbOpen((lbI+d+lbImgs.length)%lbImgs.length)}
+function lbClose(){lbEl.classList.remove('open');document.body.style.overflow=''}
+lbImgs.forEach((im,i)=>im.addEventListener('click',()=>lbOpen(i)));
+lbEl.addEventListener('click',e=>{if(e.target===lbEl)lbClose()});
+document.addEventListener('keydown',e=>{if(!lbEl.classList.contains('open'))return;if(e.key==='Escape')lbClose();if(e.key==='ArrowLeft')lbNav(-1);if(e.key==='ArrowRight')lbNav(1)});
+</script>
 </body>
 </html>
