@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ercan Çelik — E-Ticaret Geliştirme</title>
+<meta name="description" content="Türkiye'deki işletmeler için uçtan uca e-ticaret platformları. Canlı referans: vixiwear.com">
+<style>
+:root{--bg:#0a0a0b;--panel:#131316;--border:#26262c;--text:#e8e8ec;--muted:#9a9aa6;--gold:#d4a853;--gold2:#e8c880}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--bg);color:var(--text);font-family:'Segoe UI',system-ui,-apple-system,sans-serif;line-height:1.6}
+a{color:var(--gold);text-decoration:none}
+a:hover{color:var(--gold2)}
+.wrap{max-width:1100px;margin:0 auto;padding:0 24px}
+nav{position:sticky;top:0;background:rgba(10,10,11,.85);backdrop-filter:blur(12px);border-bottom:1px solid var(--border);z-index:10}
+nav .wrap{display:flex;justify-content:space-between;align-items:center;height:60px}
+nav .brand{font-weight:700;letter-spacing:.5px}
+nav .brand span{color:var(--gold)}
+nav a.nl{color:var(--muted);margin-left:20px;font-size:14px}
+nav a.nl:hover{color:var(--text)}
+.hero{padding:110px 0 80px;text-align:center}
+.hero .kicker{color:var(--gold);font-size:13px;letter-spacing:3px;text-transform:uppercase;margin-bottom:16px}
+.hero h1{font-size:clamp(34px,6vw,58px);font-weight:800;line-height:1.15;margin-bottom:18px}
+.hero h1 em{color:var(--gold);font-style:normal}
+.hero p{color:var(--muted);font-size:18px;max-width:640px;margin:0 auto 34px}
+.btn{display:inline-block;padding:13px 30px;border-radius:8px;font-weight:600;font-size:15px;border:1px solid var(--gold);color:var(--gold);transition:.2s}
+.btn:hover{background:var(--gold);color:#0a0a0b}
+.btn.solid{background:var(--gold);color:#0a0a0b;margin-right:12px}
+.btn.solid:hover{background:var(--gold2);border-color:var(--gold2)}
+section{padding:70px 0}
+h2{font-size:28px;font-weight:700;margin-bottom:8px}
+h2::after{content:'';display:block;width:48px;height:3px;background:var(--gold);margin-top:10px}
+.sub{color:var(--muted);margin-bottom:36px}
+.card{background:var(--panel);border:1px solid var(--border);border-radius:14px;padding:28px}
+.vixi-head{display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:16px;margin-bottom:22px}
+.vixi-head .live{display:inline-block;background:rgba(212,168,83,.12);border:1px solid rgba(212,168,83,.4);color:var(--gold);font-size:12px;font-weight:700;letter-spacing:1px;padding:5px 14px;border-radius:20px}
+.feat{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px;margin:22px 0}
+.feat div{background:rgba(255,255,255,.03);border:1px solid var(--border);border-radius:10px;padding:14px 16px;font-size:14px;color:#c9c9d2}
+.feat b{color:var(--gold);display:block;font-size:13px;letter-spacing:.5px;text-transform:uppercase;margin-bottom:4px}
+.shots{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:22px}
+.shots img{width:100%;border-radius:10px;border:1px solid var(--border);display:block}
+.shots img.tall{grid-column:span 1}
+.svc{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:18px}
+.svc .card h3{color:var(--gold);font-size:16px;margin-bottom:10px}
+.svc .card ul{list-style:none;font-size:14px;color:#c9c9d2}
+.svc .card li{padding:4px 0 4px 18px;position:relative}
+.svc .card li::before{content:'▸';color:var(--gold);position:absolute;left:0}
+.tags{display:flex;flex-wrap:wrap;gap:10px}
+.tags span{background:rgba(255,255,255,.04);border:1px solid var(--border);color:#c9c9d2;font-size:13px;padding:7px 16px;border-radius:20px}
+.contact{text-align:center}
+.contact p{color:var(--muted);max-width:560px;margin:0 auto 30px}
+.c-links{display:flex;justify-content:center;gap:14px;flex-wrap:wrap}
+footer{border-top:1px solid var(--border);padding:30px 0;text-align:center;color:var(--muted);font-size:13px}
+@media(max-width:700px){.shots{grid-template-columns:1fr}.hero{padding:80px 0 60px}}
+</style>
+</head>
+<body>
+<nav><div class="wrap">
+  <div class="brand">ERCAN<span>ÇELİK</span></div>
+  <div>
+    <a class="nl" href="#vixi">Referans</a>
+    <a class="nl" href="#hizmetler">Hizmetler</a>
+    <a class="nl" href="#iletisim">İletişim</a>
+  </div>
+</div></nav>
+
+<header class="hero"><div class="wrap">
+  <div class="kicker">E-Ticaret Geliştirme</div>
+  <h1>İşletmeniz için <em>uçtan uca</em><br>e-ticaret platformu</h1>
+  <p>Ödeme, kargo, fatura, üyelik ve admin paneli dahil — canlıda çalışan, satış alan sistem. Sıfırdan değil, kanıtlanmış mimariden.</p>
+  <a class="btn solid" href="#iletisim">Projenizi Konuşalım</a>
+  <a class="btn" href="#vixi">Referansı Görün</a>
+</div></header>
+
+<section id="vixi"><div class="wrap">
+  <h2>Referans: VIXI</h2>
+  <p class="sub">Sıfırdan geliştirdiğim ve canlıya aldığım üretim e-ticaret sistemi — <a href="https://vixiwear.com">vixiwear.com</a></p>
+  <div class="card">
+    <div class="vixi-head">
+      <div>
+        <strong>vixiwear.com</strong>
+        <div style="color:var(--muted);font-size:14px">Gerçek ödeme, kargo, fatura ve iade akışları uçtan uca çalışıyor.</div>
+      </div>
+      <span class="live">● CANLI — SATIŞ ALIYOR</span>
+    </div>
+    <div class="feat">
+      <div><b>Ödeme</b>İyzico CheckoutForm · 3D Secure · taksit · kart saklama</div>
+      <div><b>Kargo</b>BasitKargo/KargoJet · teklif→barkod→etiket→takip· iade kodu</div>
+      <div><b>Fatura</b>BirFatura e-Arşiv/e-Fatura otomatik kesim + PDF maili</div>
+      <div><b>Üyelik</b>Telefon OTP + e-posta · adres · favoriler · iade · destek</div>
+      <div><b>Admin</b>Sipariş/ürün/stok/üye yönetimi · Telegram bildirimleri</div>
+      <div><b>Pazarlama</b>GA4 · Meta Pixel+CAPI · Clarity · Merchant feed · SEO</div>
+    </div>
+    <div class="shots">
+      <img src="screenshots/desktop-home.png" alt="VIXI ana sayfa">
+      <img src="screenshots/desktop-products.png" alt="VIXI ürün listesi">
+      <img src="screenshots/desktop-product.png" alt="VIXI ürün detayı">
+      <img src="screenshots/mobile-product.png" alt="VIXI mobil ürün">
+    </div>
+    <p style="margin-top:18px;font-size:14px">
+      Teknik detay: <a href="https://github.com/ercancelikbusiness/vixi-ecommerce-case-study">vixi-ecommerce-case-study</a> — mimari, kararlar, ekran görüntüleri
+    </p>
+  </div>
+</div></section>
+
+<section id="hizmetler"><div class="wrap">
+  <h2>Neler Dahil</h2>
+  <p class="sub">E-ticaret siteniz için gereken her şey — tek paket</p>
+  <div class="svc">
+    <div class="card"><h3>Mağaza</h3><ul>
+      <li>Mobil öncelikli modern vitrin</li>
+      <li>Kategori, renk/beden varyantı, stok</li>
+      <li>Beden tablosu + beden öneri sihirbazı</li>
+      <li>Arama, filtre, favori, sepet</li>
+    </ul></div>
+    <div class="card"><h3>Satış</h3><ul>
+      <li>İyzico ile 3D Secure + taksitli ödeme</li>
+      <li>Kargo entegrasyonu + barkod + takip</li>
+      <li>e-Arşiv/e-Fatura otomatik kesim</li>
+      <li>Otomatik iptal/iade + kısmi iade</li>
+    </ul></div>
+    <div class="card"><h3>Yönetim</h3><ul>
+      <li>Mobilden yönetilebilen admin paneli</li>
+      <li>Telegram'a anlık sipariş bildirimi</li>
+      <li>Günlük sağlık raporu</li>
+      <li>Üyelik, destek, iletişim mesajları</li>
+    </ul></div>
+    <div class="card"><h3>Büyüme & Uyum</h3><ul>
+      <li>Google Analytics + Meta Pixel + Clarity</li>
+      <li>KVKK çerez onayı + yasal sayfalar</li>
+      <li>SEO: sitemap, JSON-LD, ürün feed'i</li>
+      <li>Hata izleme (Sentry) + hız optimizasyonu</li>
+    </ul></div>
+  </div>
+</div></section>
+
+<section><div class="wrap">
+  <h2>Teknoloji</h2>
+  <p class="sub">Kanıtlanmış, üretimde çalışan stack</p>
+  <div class="tags">
+    <span>Next.js 16</span><span>TypeScript</span><span>React 19</span><span>Tailwind CSS</span>
+    <span>Supabase / PostgreSQL</span><span>İyzico</span><span>BirFatura</span><span>Netgsm</span>
+    <span>BasitKargo</span><span>Resend</span><span>Cloudflare</span><span>Vercel</span><span>Sentry</span>
+  </div>
+</div></section>
+
+<section id="iletisim" class="contact"><div class="wrap">
+  <h2 style="text-align:center">İletişim</h2>
+  <p style="text-align:center">E-ticaret projeniz için konuşalım — mevcut işlerim: <a href="https://vixiwear.com">vixiwear.com</a></p>
+  <div class="c-links">
+    <a class="btn solid" href="mailto:ercancelikbusiness@gmail.com">✉️ E-Posta Gönder</a>
+    <a class="btn" href="https://www.linkedin.com/in/ercan-çelik-7b13a9324">LinkedIn</a>
+    <a class="btn" href="https://github.com/ercancelikbusiness">GitHub</a>
+  </div>
+</div></section>
+
+<footer><div class="wrap">
+  © 2026 Ercan Çelik — e-ticaret geliştirme · vixiwear.com referans projesi
+</div></footer>
+</body>
+</html>
