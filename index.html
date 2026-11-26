@@ -40,6 +40,8 @@ h2::after{content:'';display:block;width:48px;height:3px;background:var(--gold);
 .shots{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:22px}
 .shots img{width:100%;border-radius:10px;border:1px solid var(--border);display:block;cursor:zoom-in;transition:border-color .2s}
 .shots img:hover{border-color:var(--gold)}
+.shots.mobile-shots{display:flex;justify-content:center;flex-wrap:wrap}
+.shots.mobile-shots img{width:min(220px,40vw);flex:0 0 auto}
 .lb{position:fixed;inset:0;background:rgba(0,0,0,.92);z-index:100;display:none;align-items:center;justify-content:center;flex-direction:column;padding:30px}
 .lb.open{display:flex}
 .lb img{max-width:92vw;max-height:80vh;border-radius:10px;border:1px solid var(--border)}
@@ -110,6 +112,12 @@ footer{border-top:1px solid var(--border);padding:30px 0;text-align:center;color
       <img src="screenshots/desktop-product.png" alt="Vitrin — ürün detayı">
       <img src="screenshots/desktop-checkout.png" alt="Vitrin — güvenli ödeme">
       <img src="screenshots/hesabim.png" alt="Vitrin — üye hesabı">
+    </div>
+    <h3 style="margin-top:26px;font-size:20px;color:var(--gold);text-align:center">Mobil Deneyim</h3>
+    <p style="font-size:15px;color:var(--muted);margin-bottom:4px;text-align:center">Vitrin, gerçek alışveriş trafiğinin en yoğun olduğu mobil ekranda da hızlı ve net çalışır:</p>
+    <div class="shots mobile-shots" style="margin-top:10px">
+      <img src="screenshots/mobile-home.png" alt="Mobil vitrin — ana sayfa">
+      <img src="screenshots/mobile-product.png" alt="Mobil vitrin — ürün detayı">
     </div>
     <h3 style="margin-top:26px;font-size:20px;color:var(--gold);text-align:center">Admin Paneli</h3>
     <p style="font-size:15px;color:var(--muted);margin-bottom:4px;text-align:center">Site sahibi her şeyi kendisi yönetir — sipariş, ürün, stok, müşteri, vitrin ayarları:</p>
